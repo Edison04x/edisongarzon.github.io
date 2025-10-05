@@ -1,0 +1,206 @@
+:root {
+  --bg:#0b1220;
+  --card:#0f1724;
+  --muted:#9aa4b2;
+  --accent:#4f46e5;
+  --container:1100px;
+}
+
+/* --- Base general --- */
+body {
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:linear-gradient(180deg,#05060a 0%, #071028 100%);
+  color:#e6eef8;
+}
+
+.wrap {
+  max-width:var(--container);
+  margin:28px auto;
+  padding:28px;
+}
+
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:var(--muted);
+  text-decoration:none;
+  margin-left:14px;
+  font-weight:600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color:#fff;
+}
+
+.hero {
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:28px;
+  align-items:center;
+  margin-top:28px;
+}
+
+.card {
+  background:var(--card);
+  padding:20px;
+  border-radius:14px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  margin-bottom:20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(2,6,23,0.8);
+}
+
+.intro-img, .about-img {
+  width:100%;
+  border-radius:10px;
+  object-fit:cover;
+}
+
+/* --- Imágenes de proyectos y certificados --- */
+.project-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.cert-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+/* --- Contenedores de proyectos y certificados --- */
+#proyectos .projects-grid,
+#certificados .cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card,
+#certificados .card {
+  flex: 1 1 45%; /* Dos por fila en pantallas grandes */
+  max-width: 48%;
+  text-align: center;
+}
+
+/* --- Responsive: en móviles se apilan --- */
+@media (max-width: 768px) {
+  .project-card,
+  #certificados .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Habilidades --- */
+.skills-container {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:12px;
+}
+
+.skill {
+  background:rgba(255,255,255,0.03);
+  padding:10px 16px;
+  border-radius:12px;
+  font-weight:700;
+  color:var(--muted);
+  transition: transform 0.3s, background 0.3s;
+  cursor:default;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  background:var(--accent);
+  color:#fff;
+}
+
+/* --- Botón principal --- */
+.btn {
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 16px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:700;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background:#3730a3;
+}
+
+/* --- Proyectos --- */
+.project-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  overflow:hidden;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.project-card img {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-6px);
+}
+
+/* --- Footer --- */
+footer {
+  text-align:center;
+  margin-top:40px;
+  color:#9aa4b2;
+  font-size:13px;
+}
+
+/* --- Animaciones y scroll suave --- */
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
