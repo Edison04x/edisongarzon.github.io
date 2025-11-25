@@ -1,3 +1,13 @@
+#language-selector {
+  background: var(--card);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  font-weight: 600;
+}
+
+
 :root {
   --bg:#0b1220;
   --card:#0f1724;
