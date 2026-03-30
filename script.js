@@ -285,12 +285,20 @@ const stars = Array.from({length: 10}, () => new ShootingStar());
   requestAnimationFrame(animate);
 })();
 
-// --- MODAL PARA CERTIFICADOS ---
-function abrirModal(src) {
-  document.getElementById("modalCertificado").style.display = "flex";
-  document.getElementById("imgModal").src = src;
+// --- MODAL PARA CERTIFICADOS (EVENT LISTENERS) ---
+const modal = document.getElementById("modalCertificado");
+const imgModal = document.getElementById("imgModal");
+const certImagen = document.getElementById("certImagen");
+
+if (certImagen) {
+  certImagen.addEventListener("click", function() {
+    modal.style.display = "flex";
+    imgModal.src = this.src;
+  });
 }
 
-function cerrarModal() {
-  document.getElementById("modalCertificado").style.display = "none";
+if (modal) {
+  modal.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
 }
