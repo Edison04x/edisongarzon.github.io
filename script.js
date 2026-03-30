@@ -22,6 +22,10 @@ const translations = {
     sobre_desc: "Soy adaptable, disciplinado y con una gran capacidad de aprendizaje. Vivo en Vilafranca del Penedès y siempre doy lo mejor de mí en cualquier ámbito, comprometiéndome con los objetivos que me planteo y trabajando de forma proactiva para alcanzarlos. Frente a los desafíos técnicos actúo con iniciativa y orientación a resultados, buscando soluciones eficaces y medibles. Me gusta profundizar en aquello que no conozco e investigo de forma autónoma para adquirir el conocimiento necesario y evitar repetir errores en el futuro. Fuera del trabajo hago ejercicio regularmente como parte de mi rutina para mantenerme en salud y mejorar mi rendimiento físico y mental.",
 
     habilidades_titulo: "Mis Habilidades",
+    skill_sistemas: "Sistemas y Servidores",
+    skill_virtual: "Virtualización, Almacenamiento y Backups",
+    skill_redes: "Redes y Seguridad",
+    skill_soporte: "Soporte, Servicios y Scripting",
 
     formacion_titulo: "Formación Académica",
     form1_titulo: "CFGS Administración de Sistemas Informáticos en Red",
@@ -34,12 +38,10 @@ const translations = {
     exp_titulo: "Experiencia Profesional",
     exp1_titulo: "Técnico Helpdesk – GESTINET",
     exp1_fecha: "Vilafranca del Penedès | Febrero 2025 – Julio 2025",
-    exp1_1: "Atención, registro y diagnóstico de incidencias técnicas.",
-    exp1_2: "Resolución remota mediante AnyDesk y Tactical RMM.",
-    exp1_3: "Gestión de tickets con Zammad.",
-    exp1_4: "Instalación y mantenimiento de hardware onsite.",
-    exp1_5: "Gestión del Tenat de Microsoft 365 / Entra.",
-    exp1_6: "Administración de servidores de correo (ARsys, CDmon).",
+    exp1_1: "Soporte técnico Nivel 1 y 2 a usuarios (remoto/presencial).",
+    exp1_2: "Administración de servidores Linux y recursos compartidos (Samba/SMB).",
+    exp1_3: "Administración de identidades (Active Directory local, Microsoft 365, Entra ID).",
+    exp1_4: "Gestión de tickets (Zammad) y monitorización proactiva (Tactical RMM).",
 
     exp2_titulo: "Técnico de Soporte y montaje informático – Compumundo Store",
     exp2_fecha: "Guayaquil, Ecuador | Diciembre 2023 – Agosto 2024",
@@ -70,7 +72,6 @@ const translations = {
     footer_txt: "Edison Garzón · Portafolio Profesional"
   },
 
-  // --- Catalán ---
   ca: {
     logo: "Edison Garzón",
     nav_inicio: "Inici",
@@ -90,6 +91,10 @@ const translations = {
     sobre_desc: "Soc adaptable, disciplinat i amb una gran capacitat d'aprenentatge. Visc a Vilafranca del Penedès i sempre dono el millor de mi en qualsevol àmbit, comprometent-me amb els objectius que em plantejo i treballant de manera proactiva per a aconseguir-los. Enfront dels desafiaments tècnics actuo amb iniciativa i orientació a resultats, buscant solucions eficaces i mesurables. M'agrada aprofundir en allò que no conec i investigo de manera autònoma per a adquirir el coneixement necessari i evitar repetir errors en el futur. Fora del treball faig exercici regularment com a part de la meva rutina per a mantenir-me en salut i millorar el meu rendiment físic i mental.",
 
     habilidades_titulo: "Habilitats",
+    skill_sistemas: "Sistemes i Servidors",
+    skill_virtual: "Virtualització, Emmagatzematge i Backups",
+    skill_redes: "Xarxes i Seguretat",
+    skill_soporte: "Suport, Serveis i Scripting",
 
     formacion_titulo: "Formació Acadèmica",
     form1_titulo: "CFGS Administració de Sistemes Informàtics en Xarxa",
@@ -102,12 +107,10 @@ const translations = {
     exp_titulo: "Experiència Professional",
     exp1_titulo: "Tècnic Helpdesk – GESTINET",
     exp1_fecha: "Vilafranca del Penedès | Febrer 2025 – Juliol 2025",
-    exp1_1: "Atenció i diagnòstic d'incidències tècniques.",
-    exp1_2: "Resolució remota amb AnyDesk i Tactical RMM.",
-    exp1_3: "Gestió de tiquets amb Zammad.",
-    exp1_4: "Instal·lació i manteniment de hardware.",
-    exp1_5: "Gestió del Tenant de Microsoft 365 / Entra.",
-    exp1_6: "Administració de servidors de correu (ARsys, CDmon).",
+    exp1_1: "Suport tècnic Nivell 1 i 2 a usuaris (remot/presencial).",
+    exp1_2: "Administració de servidors Linux i recursos compartits (Samba/SMB).",
+    exp1_3: "Administració d'identitats (Active Directory local, Microsoft 365, Entra ID).",
+    exp1_4: "Gestió de tiquets (Zammad) i monitoratge proactiu (Tactical RMM).",
 
     exp2_titulo: "Tècnic de Suport i muntatge informàtic – Compumundo Store",
     exp2_fecha: "Guayaquil, Equador | Desembre 2023 – Agost 2024",
@@ -138,7 +141,6 @@ const translations = {
     footer_txt: "Edison Garzón · Portafoli Professional"
   },
 
-  // --- English ---
   en: {
     logo: "Edison Garzón",
     nav_inicio: "Home",
@@ -158,6 +160,10 @@ const translations = {
     sobre_desc: "I am adaptable, disciplined and have strong learning ability . I live in Vilafranca del Penedès and always give my best in any field, committing to the goals I set and working proactively to achieve them. When faced with technical challenges, I act with initiative and results orientation, seeking effective and measurable solutions. I like to delve into what I don't know and research autonomously to acquire the necessary knowledge and avoid repeating mistakes in the future. Outside of work, I exercise regularly as part of my routine to stay healthy and improve my physical and mental performance.",
 
     habilidades_titulo: "My Skills",
+    skill_sistemas: "Systems & Servers",
+    skill_virtual: "Virtualization, Storage & Backups",
+    skill_redes: "Networks & Security",
+    skill_soporte: "Support, Services & Scripting",
 
     formacion_titulo: "Academic Background",
     form1_titulo: "Higher Degree in Networked Computer Systems Administration",
@@ -170,12 +176,10 @@ const translations = {
     exp_titulo: "Professional Experience",
     exp1_titulo: "Helpdesk Technician – GESTINET",
     exp1_fecha: "Vilafranca del Penedès | Feb 2025 – Jul 2025",
-    exp1_1: "Assistance, registration and diagnosis of technical incidents.",
-    exp1_2: "Remote support with AnyDesk and Tactical RMM.",
-    exp1_3: "Ticket management with Zammad.",
-    exp1_4: "Onsite hardware installation and maintenance.",
-    exp1_5: "Microsoft 365 / Entra Tenant management.",
-    exp1_6: "Email server administration (ARsys, CDmon).",
+    exp1_1: "Level 1 and 2 technical support for users (remote/onsite).",
+    exp1_2: "Linux server administration and shared resources (Samba/SMB).",
+    exp1_3: "Identity management (local Active Directory, Microsoft 365, Entra ID).",
+    exp1_4: "Ticket management (Zammad) and proactive monitoring (Tactical RMM).",
 
     exp2_titulo: "IT Support Technician – Compumundo Store",
     exp2_fecha: "Guayaquil, Ecuador | Dec 2023 – Aug 2024",
@@ -213,7 +217,9 @@ document.getElementById("language-selector").addEventListener("change", function
   const elements = document.querySelectorAll("[data-key]");
   elements.forEach(el => {
     const key = el.getAttribute("data-key");
-    el.textContent = translations[lang][key];
+    if(translations[lang][key]) {
+        el.textContent = translations[lang][key];
+    }
   });
 });
 
@@ -278,3 +284,13 @@ const stars = Array.from({length: 10}, () => new ShootingStar());
   stars.forEach(star => { star.update(); star.draw(); });
   requestAnimationFrame(animate);
 })();
+
+// --- MODAL PARA CERTIFICADOS ---
+function abrirModal(src) {
+  document.getElementById("modalCertificado").style.display = "flex";
+  document.getElementById("imgModal").src = src;
+}
+
+function cerrarModal() {
+  document.getElementById("modalCertificado").style.display = "none";
+}

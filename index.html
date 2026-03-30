@@ -9,11 +9,9 @@
 </head>
 <body>
   <div class="wrap">
-    <!-- Header -->
     <header>
       <div class="logo" data-key="logo">Edison Garzón</div>
 
-      <!-- Selector de idioma -->
       <select id="language-selector">
         <option value="es">ES</option>
         <option value="ca">CAT</option>
@@ -32,7 +30,6 @@
       </nav>
     </header>
 
-    <!-- Inicio -->
     <section id="inicio" class="hero fade-in">
       <aside class="card intro-card">
         <img src="assets/profile.png" alt="Edison Garzón" class="intro-img">
@@ -46,7 +43,6 @@
       </section>
     </section>
 
-    <!-- Sobre mí -->
     <section id="sobre-mi" class="hero fade-in">
       <aside class="card">
         <img src="assets/profile1.jpg" alt="Edison Garzón foto 2" class="about-img">
@@ -59,21 +55,46 @@
       </section>
     </section>
 
-    <!-- Habilidades -->
     <section id="habilidades" class="fade-in">
       <h2 data-key="habilidades_titulo">Mis Habilidades</h2>
-      <div class="skills-container">
-        <div class="skill">AnyDesk</div>
-        <div class="skill">Tactical RMM</div>
-        <div class="skill">Zammad</div>
-        <div class="skill">Microsoft 365</div>
-        <div class="skill">SNMP</div>
-        <div class="skill">Python / Flask</div>
-        <div class="skill">Bash / Scripting</div>
+      
+      <div class="card">
+        <h3 class="skill-cat" data-key="skill_sistemas">Sistemas y Servidores</h3>
+        <div class="skills-container">
+          <div class="skill">Windows Server 2019/22</div>
+          <div class="skill">Linux (Ubuntu, Debian, CentOS)</div>
+          <div class="skill">Active Directory</div>
+          <div class="skill">Entra ID</div>
+        </div>
+
+        <h3 class="skill-cat mt-4" data-key="skill_virtual">Virtualización, Almacenamiento y Backups</h3>
+        <div class="skills-container">
+          <div class="skill">Docker</div>
+          <div class="skill">VirtualBox</div>
+          <div class="skill">Volúmenes (LVM)</div>
+          <div class="skill">Samba / SMB</div>
+          <div class="skill">Clonezilla</div>
+        </div>
+
+        <h3 class="skill-cat mt-4" data-key="skill_redes">Redes y Seguridad</h3>
+        <div class="skills-container">
+          <div class="skill">Alta Disponibilidad (HA)</div>
+          <div class="skill">OPNSense / Mikrotik</div>
+          <div class="skill">VPNs</div>
+        </div>
+
+        <h3 class="skill-cat mt-4" data-key="skill_soporte">Soporte, Servicios y Scripting</h3>
+        <div class="skills-container">
+          <div class="skill">Microsoft 365</div>
+          <div class="skill">Zammad</div>
+          <div class="skill">Tactical RMM</div>
+          <div class="skill">DNS / DHCP / Nginx</div>
+          <div class="skill">Python / Flask</div>
+          <div class="skill">Bash</div>
+        </div>
       </div>
     </section>
 
-    <!-- Formación -->
     <section id="formacion" class="fade-in">
       <h2 data-key="formacion_titulo">Formación Académica</h2>
 
@@ -93,7 +114,6 @@
       </div>
     </section>
 
-    <!-- Experiencia -->
     <section id="experiencia" class="fade-in">
       <h2 data-key="exp_titulo">Experiencia Profesional</h2>
 
@@ -101,12 +121,10 @@
         <h3 data-key="exp1_titulo">Técnico Helpdesk – GESTINET</h3>
         <p><strong data-key="exp1_fecha">Vilafranca del Penedès | Febrero 2025 – Julio 2025</strong></p>
         <ul>
-          <li data-key="exp1_1">Atención, registro y diagnóstico de incidencias técnicas.</li>
-          <li data-key="exp1_2">Resolución remota mediante AnyDesk y Tactical RMM.</li>
-          <li data-key="exp1_3">Gestión de tickets con Zammad.</li>
-          <li data-key="exp1_4">Instalación y mantenimiento de hardware onsite.</li>
-          <li data-key="exp1_5">Gestión del Tenat de Microsoft 365 / Entra.</li>
-          <li data-key="exp1_6">Administración de servidores de correo (ARsys, CDmon).</li>
+          <li data-key="exp1_1">Soporte técnico Nivel 1 y 2 a usuarios (remoto/presencial).</li>
+          <li data-key="exp1_2">Administración de servidores Linux y recursos compartidos (Samba/SMB).</li>
+          <li data-key="exp1_3">Administración de identidades (Active Directory local, Microsoft 365, Entra ID).</li>
+          <li data-key="exp1_4">Gestión de tickets (Zammad) y monitorización proactiva (Tactical RMM).</li>
         </ul>
       </div>
 
@@ -133,12 +151,10 @@
       </div>
     </section>
 
-    <!-- Proyectos -->
     <section id="proyectos" class="fade-in">
       <h2 data-key="proy_titulo">Proyectos Destacados</h2>
 
       <div class="projects-grid">
-
         <a href="https://github.com/Edison04x8021/Proyecto_MIBDB_SNMP_Izan_Edison.git" target="_blank" class="card project-card">
           <img src="assets/project_mibdb.png" alt="Proyecto MIBDB_SNMP" class="project-img">
           <h3 data-key="proy1_titulo">Proyecto MIBDB_SNMP</h3>
@@ -150,21 +166,23 @@
           <h3 data-key="proy2_titulo">Proyecto FLASK_RSS_CSS</h3>
           <p data-key="proy2_desc">Aplicación web en Flask que integra fuentes RSS y ofrece una interfaz responsiva y moderna usando CSS.</p>
         </a>
-
       </div>
     </section>
 
-    <!-- Certificados -->
     <section id="certificados" class="fade-in">
       <h2 data-key="cert_titulo">Certificados</h2>
       <div class="cert-grid">
-        <div class="card">
-          <img src="assets/cert_google.jpg" alt="Certificado Google" class="cert-img">
+        <div class="card cert-card">
+          <img src="assets/cert_google.jpg" alt="Certificado Google" class="cert-img" onclick="abrirModal(this.src)">
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
+    <div id="modalCertificado" class="modal" onclick="cerrarModal()">
+      <span class="cerrar">&times;</span>
+      <img class="modal-content" id="imgModal">
+    </div>
+
     <section id="contacto" class="fade-in">
       <h2 data-key="contacto_titulo">Contacto</h2>
       <div class="card">
