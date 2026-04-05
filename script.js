@@ -58,6 +58,8 @@ const translations = {
     exp3_4: "Cumplimiento de metas de ventas y satisfacción del cliente.",
 
     proy_titulo: "Proyectos Destacados",
+    proy3_titulo: "Simulación Clúster HPC con Docker y Bacula",
+    proy3_desc: "Despliegue automatizado de un entorno de computación de alto rendimiento (OpenMPI) y respaldos empresariales (Bacula) en contenedores Docker sobre almacenamiento LVM.",
     proy1_titulo: "Proyecto MIBDB_SNMP",
     proy1_desc: "Monitorización de red con SNMP y base de datos MIB para diagnóstico de dispositivos.",
     proy2_titulo: "Proyecto FLASK_RSS_CSS",
@@ -127,6 +129,8 @@ const translations = {
     exp3_4: "Compliment d'objectius.",
 
     proy_titulo: "Projectes Destacats",
+    proy3_titulo: "Simulació Clúster HPC amb Docker i Bacula",
+    proy3_desc: "Desplegament automatitzat d'un entorn de computació d'alt rendiment (OpenMPI) i respatllers empresarials (Bacula) en contenidors Docker sobre emmagatzematge LVM.",
     proy1_titulo: "Projecte MIBDB_SNMP",
     proy1_desc: "Monitoratge de xarxa amb SNMP i base de dades MIB per a diagnòstic de dispositius.",
     proy2_titulo: "Projecte FLASK_RSS_CSS",
@@ -196,6 +200,8 @@ const translations = {
     exp3_4: "Sales and customer satisfaction goals achievement.",
 
     proy_titulo: "Highlighted Projects",
+    proy3_titulo: "HPC Cluster Simulation with Docker and Bacula",
+    proy3_desc: "Automated deployment of a High-Performance Computing environment (OpenMPI) and enterprise backups (Bacula) in Docker containers over LVM storage.",
     proy1_titulo: "MIBDB_SNMP Project",
     proy1_desc: "SNMP network monitoring with MIB database for device diagnostics.",
     proy2_titulo: "FLASK_RSS_CSS Project",

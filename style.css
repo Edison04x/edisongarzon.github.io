@@ -7,7 +7,6 @@
   font-weight: 600;
 }
 
-
 :root {
   --bg:#0b1220;
   --card:#0f1724;
@@ -113,11 +112,27 @@ nav a:hover {
   text-align: center;
 }
 
+/* --- PROYECTO DESTACADO (HPC) --- */
+.featured-project {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.featured-img {
+  max-width: 800px; /* Más grande en desktop para que destaque la infraestructura */
+  margin-bottom: 15px;
+}
+
 /* --- Responsive: en móviles se apilan --- */
 @media (max-width: 768px) {
   .project-card,
-  #certificados .card {
+  #certificados .card,
+  .featured-project {
     flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .featured-img {
     max-width: 100%;
   }
 
