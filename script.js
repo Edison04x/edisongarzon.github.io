@@ -58,6 +58,8 @@ const translations = {
     exp3_4: "Cumplimiento de metas de ventas y satisfacción del cliente.",
 
     proy_titulo: "Proyectos Destacados",
+    proy4_titulo: "EMI Cloud — Enterprise Kubernetes On-Premise",
+    proy4_desc: "Resiliencia Tecnológica con Conciencia Sostenible. Infraestructura Cloud Privada de Alta Disponibilidad sobre hardware Bare-Metal, orquestada con Kubernetes y filosofía Open Source.",
     proy3_titulo: "Simulación Clúster HPC con Docker y Bacula",
     proy3_desc: "Despliegue automatizado de un entorno de computación de alto rendimiento (OpenMPI) y respaldos empresariales (Bacula) en contenedores Docker sobre almacenamiento LVM.",
     proy1_titulo: "Proyecto MIBDB_SNMP",
@@ -129,6 +131,8 @@ const translations = {
     exp3_4: "Compliment d'objectius.",
 
     proy_titulo: "Projectes Destacats",
+    proy4_titulo: "EMI Cloud — Enterprise Kubernetes On-Premise",
+    proy4_desc: "Resiliència Tecnològica amb Consciència Sostenible. Infraestructura Cloud Privada d'Alta Disponibilitat sobre maquinari Bare-Metal, orquestrada amb Kubernetes i filosofia Open Source.",
     proy3_titulo: "Simulació Clúster HPC amb Docker i Bacula",
     proy3_desc: "Desplegament automatitzat d'un entorn de computació d'alt rendiment (OpenMPI) i respatllers empresarials (Bacula) en contenidors Docker sobre emmagatzematge LVM.",
     proy1_titulo: "Projecte MIBDB_SNMP",
@@ -200,6 +204,8 @@ const translations = {
     exp3_4: "Sales and customer satisfaction goals achievement.",
 
     proy_titulo: "Highlighted Projects",
+    proy4_titulo: "EMI Cloud — Enterprise Kubernetes On-Premise",
+    proy4_desc: "Technological Resilience with Sustainable Awareness. Private High-Availability Cloud Infrastructure on Bare-Metal hardware, orchestrated with Kubernetes and Open Source philosophy.",
     proy3_titulo: "HPC Cluster Simulation with Docker and Bacula",
     proy3_desc: "Automated deployment of a High-Performance Computing environment (OpenMPI) and enterprise backups (Bacula) in Docker containers over LVM storage.",
     proy1_titulo: "MIBDB_SNMP Project",
