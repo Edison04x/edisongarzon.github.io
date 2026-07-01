@@ -33,13 +33,20 @@ const translations = {
 
     formacion_titulo: "Formación Académica",
     form1_titulo: "CFGS Administración de Sistemas Informáticos en Red",
-    form1_desc: "Institut Joaquim Mir (España) — 2024–2026 (en curso)",
+    form1_desc: "Institut Joaquim Mir (España) — Sept. 2024 – Jun. 2026",
     form2_titulo: "Bachillerato Técnico en Servicios Contables",
     form2_desc: "Unidad Educativa Santa María de los Ángeles (Ecuador)",
     form3_titulo: "Ofimática",
     form3_desc: "Universidad Agraria del Ecuador — Manejo avanzado de herramientas de Microsoft Office y gestión documental",
 
     exp_titulo: "Experiencia Profesional",
+    exp0_titulo: "Crew Member – McDonald's",
+    exp0_fecha: "Vilafranca del Penedès | Mayo 2026 – Actualidad",
+    exp0_1: "Personal de equipo con funciones rotativas.",
+    exp0_2: "Atención al público y gestión de caja.",
+    exp0_3: "Preparación de alimentos en cocina.",
+    exp0_4: "Mantenimiento y limpieza del establecimiento.",
+
     exp1_titulo: "Técnico Helpdesk – GESTINET",
     exp1_fecha: "Vilafranca del Penedès | Febrero 2025 – Julio 2025",
     exp1_1: "Soporte técnico Nivel 1 y 2 a usuarios (remoto/presencial).",
@@ -110,13 +117,20 @@ const translations = {
 
     formacion_titulo: "Formació Acadèmica",
     form1_titulo: "CFGS Administració de Sistemes Informàtics en Xarxa",
-    form1_desc: "Institut Joaquim Mir (Espanya) — 2024–2026 (en curs)",
+    form1_desc: "Institut Joaquim Mir (Espanya) — Set. 2024 – Jun. 2026",
     form2_titulo: "Batxillerat Tècnic en Serveis Comptables",
     form2_desc: "Unitat Educativa Santa María de los Ángeles (Equador)",
     form3_titulo: "Ofimàtica",
     form3_desc: "Universitat Agrària de l'Equador — Maneig avançat d'eines de Microsoft Office i gestió documental",
 
     exp_titulo: "Experiència Professional",
+    exp0_titulo: "Crew Member – McDonald's",
+    exp0_fecha: "Vilafranca del Penedès | Maig 2026 – Actualitat",
+    exp0_1: "Personal d'equip amb funcions rotatives.",
+    exp0_2: "Atenció al públic i gestió de caixa.",
+    exp0_3: "Preparació d'aliments a la cuina.",
+    exp0_4: "Manteniment i neteja de l'establiment.",
+
     exp1_titulo: "Tècnic Helpdesk – GESTINET",
     exp1_fecha: "Vilafranca del Penedès | Febrer 2025 – Juliol 2025",
     exp1_1: "Suport tècnic Nivell 1 i 2 a usuaris (remot/presencial).",
@@ -187,13 +201,20 @@ const translations = {
 
     formacion_titulo: "Academic Background",
     form1_titulo: "Higher Degree in Networked Computer Systems Administration",
-    form1_desc: "Institut Joaquim Mir (Spain) — 2024–2026 (in progress)",
+    form1_desc: "Institut Joaquim Mir (Spain) — Sept. 2024 – Jun. 2026",
     form2_titulo: "Technical High School in Accounting Services",
     form2_desc: "Santa María de los Ángeles Educational Unit (Ecuador)",
     form3_titulo: "Office Automation",
     form3_desc: "Agrarian University of Ecuador — Advanced Office management",
 
     exp_titulo: "Professional Experience",
+    exp0_titulo: "Crew Member – McDonald's",
+    exp0_fecha: "Vilafranca del Penedès | May 2026 – Present",
+    exp0_1: "Team member with rotating responsibilities.",
+    exp0_2: "Customer service and cash register management.",
+    exp0_3: "Food preparation in kitchen.",
+    exp0_4: "Facility maintenance and cleaning.",
+
     exp1_titulo: "Helpdesk Technician – GESTINET",
     exp1_fecha: "Vilafranca del Penedès | Feb 2025 – Jul 2025",
     exp1_1: "Level 1 and 2 technical support for users (remote/onsite).",
@@ -309,20 +330,20 @@ const stars = Array.from({length: 10}, () => new ShootingStar());
   requestAnimationFrame(animate);
 })();
 
-// --- MODAL PARA CERTIFICADOS (EVENT LISTENERS) ---
+// --- MODAL PARA CERTIFICADOS (multi-certificado via clase) ---
 const modal = document.getElementById("modalCertificado");
 const imgModal = document.getElementById("imgModal");
-const certImagen = document.getElementById("certImagen");
 
-if (certImagen) {
-  certImagen.addEventListener("click", function() {
+document.querySelectorAll(".cert-clickable").forEach(img => {
+  img.addEventListener("click", function () {
     modal.style.display = "flex";
     imgModal.src = this.src;
+    imgModal.alt = this.alt;
   });
-}
+});
 
 if (modal) {
-  modal.addEventListener("click", function() {
+  modal.addEventListener("click", function () {
     modal.style.display = "none";
   });
 }
