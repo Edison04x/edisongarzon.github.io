@@ -1,6 +1,15 @@
 // --- Año dinámico ---
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// --- Botón CV: sacarlo del párrafo y colocarlo debajo del texto ---
+const cvBtn = document.querySelector(".intro-text .btn");
+if (cvBtn && cvBtn.parentElement.tagName === "P") {
+  const parrafo = cvBtn.parentElement;
+  parrafo.after(cvBtn);
+  cvBtn.style.display = "inline-block";
+  cvBtn.style.marginTop = "1rem";
+}
+
 // --- Traducciones ---
 const translations = {
   es: {
@@ -15,7 +24,7 @@ const translations = {
     nav_contacto: "Contacto",
 
     inicio_titulo: "Hola, soy Edison Garzón",
-    inicio_desc: "Estudiante de Administración de Sistemas Informáticos en Red, con experiencia en soporte técnico, administración de servidores y desarrollo web con Python y Flask. Me apasiona la tecnología, la automatización y la mejora continua de procesos IT.",
+    inicio_desc: "Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR), especializado en soporte técnico IT, administración de servidores y entornos cloud y virtualizados. Me apasiona la infraestructura tecnológica, la automatización con Python y Bash, y la mejora continua de procesos IT.",
     btn_cv: "Descargar CV",
 
     sobre_titulo: "Sobre mí",
@@ -99,7 +108,7 @@ const translations = {
     nav_contacto: "Contacte",
 
     inicio_titulo: "Hola, soc Edison Garzón",
-    inicio_desc: "Estudiant d'Administració de Sistemes Informàtics en Xarxa, amb experiència en suport tècnic, administració de servidors i desenvolupament web amb Python i Flask. M'apassiona la tecnologia, l'automatització i la millora contínua de processos IT.",
+    inicio_desc: "Tècnic Superior en Administració de Sistemes Informàtics en Xarxa (ASIX), especialitzat en suport tècnic IT, administració de servidors i entorns cloud i virtualitzats. M'apassiona la infraestructura tecnològica, l'automatització amb Python i Bash, i la millora contínua de processos IT.",
     btn_cv: "Descarregar CV",
 
     sobre_titulo: "Sobre mi",
@@ -141,22 +150,22 @@ const translations = {
     exp2_titulo: "Tècnic de Suport i muntatge informàtic – Compumundo Store",
     exp2_fecha: "Guayaquil, Equador | Desembre 2023 – Agost 2024",
     exp2_1: "Muntatge i configuració de PCs, instal·lació de drivers i programari.",
-    exp2_2: "Atenció al client i assessorament tecnològic.",
-    exp2_3: "Control d'estoc i inventari, reporti de productes que manca.",
-    exp2_4: "Suport tècnic bàsic en eqips i perifèrics.",
+    exp2_2: "Atenció al client a la botiga i assessorament tecnològic.",
+    exp2_3: "Control d'estoc i inventari, informe de productes que falten.",
+    exp2_4: "Suport tècnic bàsic en equips i perifèrics.",
 
-    exp3_titulo: "Dependent / Caixer – Marathon Sports",
+    exp3_titulo: "Dependent Polivalent / Caixer – Marathon Sports",
     exp3_fecha: "Guayaquil, Equador | Abril 2023 – Octubre 2023",
-    exp3_1: "Atenció i assessorament esportiu.",
-    exp3_2: "Gestió de caixa.",
-    exp3_3: "Organització d'estoc.",
-    exp3_4: "Compliment d'objectius.",
+    exp3_1: "Atenció i assessorament en l'àrea esportiva.",
+    exp3_2: "Gestió de caixa, arqueig i tancaments diaris.",
+    exp3_3: "Organització d'estoc i reposició de productes.",
+    exp3_4: "Compliment d'objectius de vendes i satisfacció del client.",
 
     proy_titulo: "Projectes Destacats",
     proy4_titulo: "EMI Cloud — Enterprise Kubernetes On-Premise",
     proy4_desc: "Resiliència Tecnològica amb Consciència Sostenible. Infraestructura Cloud Privada d'Alta Disponibilitat sobre maquinari Bare-Metal, orquestrada amb Kubernetes i filosofia Open Source.",
     proy3_titulo: "Simulació Clúster HPC amb Docker i Bacula",
-    proy3_desc: "Desplegament automatitzat d'un entorn de computació d'alt rendiment (OpenMPI) i respatllers empresarials (Bacula) en contenidors Docker sobre emmagatzematge LVM.",
+    proy3_desc: "Desplegament automatitzat d'un entorn de computació d'alt rendiment (OpenMPI) i còpies de seguretat empresarials (Bacula) en contenidors Docker sobre emmagatzematge LVM.",
     proy1_titulo: "Projecte MIBDB_SNMP",
     proy1_desc: "Monitoratge de xarxa amb SNMP i base de dades MIB per a diagnòstic de dispositius.",
     proy2_titulo: "Projecte FLASK_RSS_CSS",
@@ -183,11 +192,11 @@ const translations = {
     nav_contacto: "Contact",
 
     inicio_titulo: "Hi, I'm Edison Garzón",
-    inicio_desc: "Student of Networked Computer Systems Administration with experience in technical support, server administration, and web development using Python and Flask. I am passionate about technology, automation, and continuous improvement of IT processes.",
+    inicio_desc: "Higher Technician in Networked Computer Systems Administration (ASIR), specialized in IT technical support, server administration, and cloud and virtualized environments. I am passionate about technological infrastructure, automation with Python and Bash, and continuous improvement of IT processes.",
     btn_cv: "Download CV",
 
     sobre_titulo: "About me",
-    sobre_desc: "I am adaptable, disciplined and have strong learning ability . I live in Vilafranca del Penedès and always give my best in any field, committing to the goals I set and working proactively to achieve them. When faced with technical challenges, I act with initiative and results orientation, seeking effective and measurable solutions. I like to delve into what I don't know and research autonomously to acquire the necessary knowledge and avoid repeating mistakes in the future. Outside of work, I exercise regularly as part of my routine to stay healthy and improve my physical and mental performance.",
+    sobre_desc: "I am adaptable, disciplined and have strong learning ability. I live in Vilafranca del Penedès and always give my best in any field, committing to the goals I set and working proactively to achieve them. When faced with technical challenges, I act with initiative and results orientation, seeking effective and measurable solutions. I like to delve into what I don't know and research autonomously to acquire the necessary knowledge and avoid repeating mistakes in the future. Outside of work, I exercise regularly as part of my routine to stay healthy and improve my physical and mental performance.",
 
     habilidades_titulo: "My Skills",
     skill_sistemas: "Systems",
@@ -259,11 +268,23 @@ const translations = {
 // --- Cambio de idioma ---
 document.getElementById("language-selector").addEventListener("change", function () {
   const lang = this.value;
-  const elements = document.querySelectorAll("[data-key]");
-  elements.forEach(el => {
-    const key = el.getAttribute("data-key");
-    if(translations[lang][key]) {
-        el.textContent = translations[lang][key];
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-key]").forEach(el => {
+    const text = translations[lang][el.getAttribute("data-key")];
+    if (!text) return;
+
+    if (el.children.length === 0) {
+      el.textContent = text;
+    } else {
+      // El elemento contiene otros elementos (p. ej. el botón del CV dentro del párrafo):
+      // solo se actualiza su primer nodo de texto para no borrarlos.
+      const textNode = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+      if (textNode) {
+        textNode.nodeValue = text + " ";
+      } else {
+        el.insertBefore(document.createTextNode(text + " "), el.firstChild);
+      }
     }
   });
 });
